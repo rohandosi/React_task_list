@@ -32,7 +32,7 @@ var Title = function Title() {
     React.createElement(
       "h2",
       { className: "textCenter" },
-      "To-do List"
+      "Task List"
     )
   );
 };
@@ -65,7 +65,7 @@ var Form = function (_React$Component) {
       this.setState({
         value: ''
       });
-      this.input.placeholder = "Add todo here...";
+      this.input.placeholder = "Add tasks here...";
     }
   };
 
@@ -84,7 +84,7 @@ var Form = function (_React$Component) {
             _this2.input = node;
           },
           value: this.state.value,
-          placeholder: "Add todos here...",
+          placeholder: "Add tasks here...",
           autocomplete: "off",
           onChange: this.handleChange
         }),
@@ -184,13 +184,13 @@ var Container = function (_React$Component2) {
 
     var introData = [{
       id: -3,
-      value: "Hi! This is a simple todo list app made by REACT <3"
+      value: "Hi! This is a simple task list"
     }, {
       id: -2,
-      value: "Hover over todos and click on `X` to delete them!"
+      value: "Add and delete tasks as you wish!"
     }, {
       id: -1,
-      value: "Add new todos and come back any time later, I will save them for you!"
+      value: "Enjoy!"
     }];
 
     var localData = localStorage.todos && JSON.parse(localStorage.todos);
